@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="372.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifsc.tds.controller.ContaPagarEditController">
+	<children>
+		<GridPane layoutX="10.0" prefHeight="265.0" prefWidth="428.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="210.0" />
+			</columnConstraints>
+			<rowConstraints>
+            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="3.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="102.0" minHeight="3.0" prefHeight="36.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="102.0" minHeight="3.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="3.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="3.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="3.0" prefHeight="36.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label fx:id="lblDescricao" text="Descrição" GridPane.rowIndex="3" />
+				<TextField fx:id="txtDescricao" prefHeight="23.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lblDataCadastro" text="Data Cadastro" GridPane.rowIndex="4" />
+            <DatePicker fx:id="dtpDataCadastro" prefHeight="17.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+				<Label fx:id="lblUsuario" text="Usuário" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cbxUsuario" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lblDataPagamento" text="Data Pagamento" GridPane.rowIndex="5" />
+            <DatePicker fx:id="dtpDataPagamento" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            
+            <Label fx:id="lblDataVencimento" text="Data Vencimento" GridPane.rowIndex="6" />
+            <DatePicker fx:id="dtpDataVencimento" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="lblValorTotal" text="Valor Total" GridPane.rowIndex="7" />
+            <TextField fx:id="txtValorTotal" prefHeight="23.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="lblNomeFavorecido" text="Nome do Favorecido" />
+            <ComboBox fx:id="cbxFavorecido" prefHeight="25.0" prefWidth="241.0" GridPane.columnIndex="1" />
+            <Label text="Tipo Conta" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cbxTipoConta" prefHeight="25.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+			</children>
+		</GridPane>
+		<HBox layoutX="328.0" layoutY="333.0" spacing="5.0" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="10.0">
+			<children>
+				<Button fx:id="btnOk" layoutX="197.1875" layoutY="241.0" mnemonicParsing="false" onAction="#clickOK" prefWidth="90.0" text="OK" />
+				<Button fx:id="btnCancela" layoutX="249.375" layoutY="241.0" mnemonicParsing="false" onAction="#clickCancela" prefWidth="90.0" text="Cancela" />
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>
