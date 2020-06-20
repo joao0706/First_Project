@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="pnlLogin" alignment="center" hgap="10" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifsc.tds.controller.LoginController">
+	<padding>
+		<Insets bottom="10" left="25" right="25" top="25" />
+	</padding>
+	<Text fx:id="lblAcesso" text="Acesso" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+
+	<Label fx:id="lblLogin" text="Login:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+
+	<TextField fx:id="txtLogin" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+	<Label fx:id="lblSenha" text="Senha:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+
+	<PasswordField fx:id="txtSenha" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+	<HBox fx:id="pnlBotoes" alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+		<Button fx:id="btnLogin" onAction="#entrar" text="Entrar" />
+		<Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+	</HBox>
+	<stylesheets>
+		<URL value="@Login.css" />
+	</stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>	
+</GridPane>

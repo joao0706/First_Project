@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifsc.tds.controller.MenuController">
+	<children>
+		<MenuBar VBox.vgrow="NEVER">
+			<menus>
+				<Menu mnemonicParsing="false" text="Cadastro">
+					<items>
+                  <MenuItem fx:id="mnoUsuario" mnemonicParsing="false" onAction="#mnoUsuario" text="Farmacêuticos" />
+						<MenuItem fx:id="mnoCadastroRemedio" mnemonicParsing="false" onAction="#mnoCadastroRemedio" text="Cadastro Medicamentos" />
+						<SeparatorMenuItem mnemonicParsing="false" />
+						<MenuItem fx:id="mnoSair" mnemonicParsing="false" onAction="#mnoSair" text="Sair" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Gráficos">
+					<items>
+						<SeparatorMenuItem mnemonicParsing="false" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="mnoGraficoListaUsuarioCadastroPorMes" mnemonicParsing="false" onAction="#mnoGraficoListaUsuarioCadastroPorMes" text="Gráfico Listagem farmacêuticos Cadastrado Por Mês" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Relatórios">
+					<items>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="mnoRelatorioUsuario" mnemonicParsing="false" onAction="#mnoRelatorioUsuario" text="Listagem de farmacêuticos" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+		<HBox fx:id="pnlStatusBar" alignment="BOTTOM_RIGHT" prefHeight="20.0">
+			<children>
+				<Label fx:id="lblUsuario" alignment="CENTER" contentDisplay="CENTER" text="Usuário:" />
+				<Separator orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" />
+				<Label fx:id="lblData" alignment="CENTER" contentDisplay="CENTER" text="Data:" />
+				<Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="0.0" />
+				<Label fx:id="lblHora" alignment="CENTER" contentDisplay="CENTER" text="Hora:" />
+			</children>
+		</HBox>
+	</children>
+	<stylesheets>
+		<URL value="@Menu.css" />
+	</stylesheets>
+</VBox>
