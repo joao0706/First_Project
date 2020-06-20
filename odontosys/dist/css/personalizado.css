@@ -1,0 +1,17 @@
+body {
+    margin: 40px 10px;
+    font-family: Arial, Helvetica, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#calendar {
+    padding: 0px 0px 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.visevent{
+    display: block;
+}
+.formedit{
+    display: none;
+}
