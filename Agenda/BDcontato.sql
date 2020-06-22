@@ -1,7 +1,6 @@
 CREATE database agenda;
 use agenda;
 
-
 CREATE TABLE `contato` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `nome` varchar(50) NOT NULL,
