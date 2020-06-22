@@ -4,5 +4,6 @@ CREATE TABLE `contato` (
  `telefone` varchar(50) NULL,
  `email` varchar(50) NULL,
  `endereco` TEXT NULL,
+`site` varchar(70) NULL,
  PRIMARY KEY (`id`)
 );
